@@ -1,5 +1,8 @@
 # FluxoPro — Orquestrador de Aprovações Transversais
 
+> Este repositório também contém o **[LicitaGov](licitagov/README.md)**, co-piloto de compras públicas para órgãos
+> públicos (Lei 14.133/2021): análise de ETP/TR, pesquisa de preços, edital, habilitação e fiscalização de contratos.
+
 Pedidos de compra, reembolso, contratação e férias costumam ficar presos em e-mails, WhatsApp e chamados sem
 visibilidade de gargalos. O FluxoPro centraliza todas as alçadas de decisão em uma caixa de aprovação mobile no
 estilo "tinder": **arraste para a direita para aprovar e para a esquerda para rejeitar**.

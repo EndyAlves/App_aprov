@@ -3,12 +3,19 @@
   "private": true,
   "version": "0.1.0",
   "description": "FluxoPro — orquestrador de aprovações transversais (compras, reembolsos, contratações e férias)",
-  "workspaces": ["server", "web"],
+  "workspaces": [
+    "server",
+    "web",
+    "licitagov/server",
+    "licitagov/web"
+  ],
   "scripts": {
     "dev": "npm run dev -w server & npm run dev -w web",
-    "build": "npm run build -w server && npm run build -w web",
+    "build": "npm run build -w server && npm run build -w web && npm run build -w licitagov/server && npm run build -w licitagov/web",
     "start": "npm run start -w server",
-    "test": "npm test -w server",
-    "typecheck": "npm run typecheck -w server && npm run typecheck -w web"
+    "test": "npm test -w server && npm test -w licitagov/server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web && npm run typecheck -w licitagov/server && npm run typecheck -w licitagov/web",
+    "dev:licitagov": "npm run dev -w licitagov/server & npm run dev -w licitagov/web",
+    "start:licitagov": "npm run start -w licitagov/server"
   }
 }
